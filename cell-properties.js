@@ -19,3 +19,34 @@ for (let i = 0; i < rows; i++) {
     }
     sheetDB.push(sheetRow);
 }
+
+// selectors for cell-properties
+let bold = document.querySelector(".bold");
+let italic = document.querySelector(".italic");
+let underline = document.querySelector(".underline");
+let fontSize = document.querySelector(".font-size-prop");
+let fontFamily = document.querySelector(".font-family-prop");
+let fontColor = document.querySelector(".font-color-prop");
+let BGcolor = document.querySelector(".BGcolor-prop");
+
+let alignment = document.querySelectorAll(".alignment");
+let leftAlign = alignment[0];
+let centerAlign = alignment[1];
+let rightAlign = alignment[2];
+
+let addressBar = document.querySelector(".address-bar")
+
+// Application of 2-way binding
+// Attach property listeners
+bold.addEventListener("click", (e) => {
+    let address = addressBar.value;
+    activeCell(address);
+});
+
+function activeCell(address) {
+
+}
+
+function decodeRIDCIDFromAddress(address) {
+    
+}
