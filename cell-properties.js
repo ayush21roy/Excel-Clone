@@ -112,7 +112,7 @@ alignment.forEach((alignElem) => {      // forEach coz its a NodeList querySelAl
 
         let alignValue = e.target.classList[0]; // class="left material-symbols-outlined alignment" -> left
         cellProp.alignment = alignValue; // Data change
-        cell.style.alignment = cellProp.alignment // UI change (1)
+        cell.style.textAlign = cellProp.alignment; // UI change (1)
 
         switch(alignValue) { // UI change (2)
             case 'left':
